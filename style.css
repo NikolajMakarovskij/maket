@@ -217,21 +217,9 @@ body {
   width: 100%;
   height: 465px;
 }
-.slider__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.slider__previous-button{
-  position: relative;
-  bottom: 50%;
-  max-width: 22px;
-  height: 40px;
-  margin-top: -20px;
-  padding-left: 8.2%;
-  z-index: 5;
-}
-.slider .previous{ 
+
+
+/*.slider .previous { 
   background-image: url(images/ArrowLeftBlue.png);
   background-repeat: no-repeat;
   cursor: pointer;
@@ -252,7 +240,7 @@ body {
   max-width: 22px;
   height: 40px;
   margin-top: -20px;
-  padding-right: 16px;
+  
 }
 
 .slider .previous:hover {
@@ -261,22 +249,68 @@ body {
 
 .slider .next:hover {
   background-color: rgba(0, 0, 0, 0.2);
+}*/
+
+/* Кнопки назад и вперёд: */
+.slider .previous  {
+  /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+  cursor: pointer;
+  /* Положение элемента задаётся относительно границ браузера: */
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 40px;
+  margin: -20px 8.2% 0% 8.2%;
+  /* Оформление самих кнопок: */
+  background-image: url(images/ArrowLeftBlue.png);
+  background-repeat: no-repeat;
+  color: rgb(42, 82, 135);
+  font-weight: 100;
+  font-size: 40px;
+
+}
+.slider .next {
+  
+   /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+   cursor: pointer;
+   /* Положение элемента задаётся относительно границ браузера: */
+   right: 0;
+   position: absolute;
+   top: 50%;
+   width: 22px;
+   height: 40px;
+   margin: -20px 8.2% 0% 0%;
+   /* Оформление самих кнопок: */
+   background-image: url(images/ArrowRightBlue.png);
+   background-repeat: no-repeat;
+   color: rgb(42, 82, 135);
+   font-weight: 100;
+   font-size: 40px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.slider .previous:hover{
+  background-image: url(images/ArrowLeftRed.png);  
+  background-repeat: no-repeat;
+}
+.slider .next:hover {
+  background-image: url(images/ArrowRightRed.png);
+  background-repeat: no-repeat;  
 }
 
 /* Анимация слайдов: */
-.slider .slider__item {
+.slider .item {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
 .ScrollerTextBackground {
   background-color: rgba(255, 255, 255, 0.831);
-  position: absolute;
+  position: relative;
   left: 155px;
-  top: 204px;
   width: 591px;
   height: 219px;
-  z-index: 108;
+  z-index: 5;
   }
 .ScrollerTextHeader {
   font-size: 28.5px;
