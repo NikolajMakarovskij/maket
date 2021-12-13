@@ -227,7 +227,7 @@ body {
   top: 50%;
   width: 22px;
   height: 40px;
-  margin: -20px 8.2% 0% 8.2%;
+  margin: -20px 0% 0% 0%;
   background-image: url(images/ArrowLeftBlue.png);
   background-repeat: no-repeat;
   z-index: 6;
@@ -239,7 +239,7 @@ body {
    top: 50%;
    width: 22px;
    height: 40px;
-   margin: -20px 8.2% 0% 0%;
+   margin: -20px 0% 0% 0%;
    background-image: url(images/ArrowRightBlue.png);
    background-repeat: no-repeat;
    z-index: 6;
@@ -271,8 +271,9 @@ body {
 
 .ScrollerTextBackground {
   background-color: rgba(255, 255, 255, 0.831);
-  position: relative;
-  margin-top: 120px;
+  position: absolute;
+  top: 50%;
+  margin: -108px 0px 0px 0px;
   left: 40px;
   width: 591px;
   height: 219px;
