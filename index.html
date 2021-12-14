@@ -8,7 +8,13 @@
   </style>
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--slider-->  
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <!--fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -90,32 +96,43 @@
     </div>
   </div>
   </header>  
- <!--SCROLLER--> 
+ <!--slider--> 
 <section>   
-  <div class="slider">
-    <div class="slider__item">
-      <img src="images/Background1.png" />
+<div class="swiper_head">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="images/Background1.png">
     </div>
-    <div class="slider__item">
-      <img src="images/Background2.png" />
+    <div class="swiper-slide">
+      <img src="images/Background2.png">
     </div>
-    <div class="slider__item">
-      <img src="images/Background3.png" />
+    <div class="swiper-slide">
+      <img src="images/Background3.png">
     </div>
-    <div class="slider__item">
-      <img src="images/Background4.png" />
+    <div class="swiper-slide">
+      <img src="images/Background4.png">
     </div>
-    <div class="slider__item">
-      <img src="images/Background5.png" />
-    </div> 
-    <div class="slider__content-wrapper">
-      <a class="previous" onclick="previousSlide()"></a>
-      <a class="next" onclick="nextSlide()"></a>
-      <div class="ScrollerTextBackground">
-        <div class="ScrollerTextHeader">
+    <div class="swiper-slide">
+      <img src="images/Background5.png">
+    </div>
+    
+  </div>
+ 
+
+ 
+    
+    <div class="swiper__content-wrapper">
+      <!-- навигация -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- пагинация -->
+      <div class="swiper-pagination"></div>
+      <!-- окно с текстом -->
+      <div class="swiper__text-background">
+        <div class="swiper__text-header">
           В стремлениии к совершенству
         </div>
-       <div class="ScrollerText">
+       <div class="swiper__text">
          Многолетний опыт исследований и производства, позволяют нам удовлетворить любые запросы заказчика и внести свой вклад в успех наших клиентов.
         </div>
       </div>
