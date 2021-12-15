@@ -1,29 +1,21 @@
-  // core version + navigation, pagination modules:
-  import {Swiper, Navigation, Pagination } from 'swiper';
-  // import Swiper and modules styles
-  import 'swiper/css';
-  import 'swiper/css/navigation';
-  import 'swiper/css/pagination';
-
-  // configure Swiper to use modules
-  Swiper.use([Navigation, Pagination]);
-
-  // init Swiper:
-  const swiper_head = new Swiper('.swiper_head', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-    speed: 400,
-    spaceBetween: 100,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
+var swiper = new Swiper(".slider-header", {
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  slidesPerView: 1,
+  speed: 1000,
+  
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: 'bullets',
+    clickable: true,
+  },
+  mousewheel: true,
+  keyboard: true,
+});

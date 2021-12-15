@@ -200,26 +200,26 @@ body {
   text-decoration: underline;
 }
 
-.swiper_head {
+.slider-header {
   max-width: 100%;
   position: relative;
   margin: auto;
   height: 465px;
 }
 
-.swiper-slide img {
+.slider-header img {
   object-fit: cover; 
   margin: 0 auto;
   width: 100%;
   height: 465px;
 }
 
-.swiper-pagination {
+.slider-header__pagination {
   position: absolute;
 }
 
 /* Кнопки назад и вперёд: */
-.swiper-head .swiper-button-prev  {
+.swiper__content-wrapper .swiper-button-prev  {
   cursor: pointer;
   position: absolute;
   color: rgb(0 0 0 / 0%);
@@ -231,7 +231,7 @@ body {
   background-repeat: no-repeat;
   z-index: 6;
 }
-.swiper-head .swiper-button-next {
+.swiper__content-wrapper .swiper-button-next {
    cursor: pointer;
    right: 0;
    position: absolute;
@@ -245,11 +245,11 @@ body {
    z-index: 6;
 }
 
-.swiper-head .swiper-button-prev:hover{
+.swiper__content-wrapper .swiper-button-prev:hover{
   background-image: url(images/ArrowLeftRed.png);  
   background-repeat: no-repeat;
 }
-.swiper-head .swiper-button-next:hover {
+.swiper__content-wrapper .swiper-button-next:hover {
   background-image: url(images/ArrowRightRed.png);
   background-repeat: no-repeat;  
 }
