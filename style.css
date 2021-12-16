@@ -538,25 +538,21 @@ left: 298px;;
 }
 
 .advanteges__item{
+  display: inline-block;
+  text-align: center;
   width: 25%;
   align-items: center
 }
 
 .advantages__image{
-  display: flex;
-  justify-content: center;
-}
 
-.advantages__image-conteiner{
-  display: flex;
-  justify-content: center;
-  height: 56px;
 }
 
 .advanteges__text{
   font-size: 16px;
   text-align: center;
   position: relative;
+  vertical-align: middle;
 }
 
 .blockzakaz {
