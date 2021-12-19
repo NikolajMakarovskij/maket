@@ -20,9 +20,12 @@ const swiper1 = new Swiper(".slider-header", {
   keyboard: true,
 });
  
-const swiper2 = new Swiper(".slider-partners", {
+var swiper2 = new Swiper(".slider-partners", {
+
+  setWrapperSize: true,
+  width:1030,
   slidesPerView: 6,
-        spaceBetween: 17,
+        spaceBetween: 34,
         slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
@@ -33,6 +36,7 @@ const swiper2 = new Swiper(".slider-partners", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+    width: 1140,
   },
 
   mousewheel: true,
