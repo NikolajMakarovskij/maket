@@ -25,17 +25,18 @@ var swiper2 = new Swiper(".slider-partners", {
   setWrapperSize: true,
   width:1030,
   slidesPerView: 6,
-        spaceBetween: 34,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
+  spaceBetween: 34,
+  slidesPerGroup: 1,
+  loop: true,
+
+
   
 
   
   speed: 1000,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".slider-partners-button-next",
+    prevEl: ".slider-partners-button-prev",
     width: 1140,
   },
 
