@@ -74,6 +74,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-left: 360px;
+  z-index: 4;
 }
 
 .header-menu__item {
@@ -151,7 +152,8 @@ body {
   text-decoration: underline;
 }
 
-  /*треугольник с тенью*/
+/*выпадающее меню*/
+  
 .header-menu__Production-list {
   display: none;
   background-color: rgb(255, 255, 255);
@@ -162,6 +164,32 @@ body {
   z-index: 10;
 }
 
+.header-menu__production-list-item {
+  padding: 32.6px 0px 0px 38px;
+  z-index: 10;
+}
+
+.header-menu__production-list-item a {
+  
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  line-height: 1.0;
+  text-align: left;
+  text-transform: none;
+  text-decoration: none;
+  z-index: 11;  
+}
+
+.header-menu__item:hover .header-menu__Production-list {
+  display: block;
+}
+
+.header-menu__production-list-item a:hover {
+  text-decoration: underline;
+}
+
+/*треугольник с тенью*/
 .header-menu__Production-list::before {
   width: 20px;
   height: 20px;
@@ -180,30 +208,7 @@ body {
   left: 32px;
   box-shadow: -3px -3px 5px -2px rgb(0 0 0 / 16%);
 }
-  /*выпадающее меню*/
-.header-menu__production-list-item {
-  padding: 32.6px 0px 0px 38px;
-}
-
-.header-menu__production-list-item a {
-  
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(0, 0, 0);
-  line-height: 1.0;
-  text-align: left;
-  text-transform: none;
-  text-decoration: none;
  
-  
-}
-
-.header-menu__item:hover .header-menu__Production-list {
-  display: block;
-}
-.header-menu__production-list-item a:hover {
-  text-decoration: underline;
-}
 /*слайдер*/
 .section-wrapper{
   height: 465px;
@@ -253,10 +258,12 @@ body {
   background-image: url(images/ArrowLeftRed.png);  
   background-repeat: no-repeat;
 }
+
 .swiper-button-next:active {
   background-image: url(images/ArrowRightRed.png);
   background-repeat: no-repeat;  
 }
+
 /*пагинация*/
 .swiper-pagination {
   flex: 0 0 109.5px;
@@ -297,7 +304,7 @@ body {
   width: 591px;
   height: 219px;
   z-index: 5;
-  }
+}
 
 .swiper__text-header{
   font-size: 28.5px;
@@ -311,7 +318,7 @@ body {
   top: 31.5px;
   width: 497px;
   z-index: 109;
-  }
+}
 
 .swiper__text {
   font-size: 20px;
@@ -325,7 +332,7 @@ body {
   width: 497px;
   height: 106px;
   z-index: 110;
-  }
+}
 
 /*продукция*/
 .company-production {
@@ -335,13 +342,14 @@ body {
   height: 1000px;
   margin: 0 auto;
 }
+
 .company-production__text-content1 {
   width: 100%;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   padding: 100px 0 50px 0;
-  }
+}
 
 .company-production__text-content2 {
   font-size: 18px;
@@ -349,7 +357,7 @@ body {
   text-align: left;
   text-indent: 20px;
   width: 100%;
- }
+}
 
 .company-production__text-content3 {
   font-size: 30px;
@@ -357,12 +365,12 @@ body {
   text-align: center;
   width: 100%;
   padding: 100px 0 50px 0;
- }
+}
 
- .company-production__conteiner{
-   display: flex;
-   justify-content: space-between;  
- }
+.company-production__conteiner{
+ display: flex;
+ justify-content: space-between;  
+}
 
 .company-production__text {
   text-align: center;
@@ -373,19 +381,21 @@ body {
   margin: 10px 0 10px 0;
   font-size: 20px;
   line-height: 1.2;
-  }
+}
+
 .company-production__text-content{
   text-align: center;
   width: 100%;
 }
+
 .company-production__item1 {
   background-image: url("images/sam_pod.jpg");
   width: 368px;
   height: 168px;
-  margin: 0 18px 31px 0;
- 
-  }
-  .company-production__rectangle1 {
+  margin: 0 18px 31px 0; 
+}
+
+.company-production__rectangle1 {
   border-width: 0.417px;
   border-color: rgb(74, 74, 74);
   border-style: solid;
@@ -394,8 +404,8 @@ body {
   top: 147px;
   width: 368px;
   height: 112px;
- 
-  }
+}
+
 .ContentButton {
   border-radius: 4px;
   background-color: rgb(0, 174, 239);
@@ -412,18 +422,20 @@ body {
   color: rgb(255, 255, 255);
   line-height: 1.2;
 }
+
 .ContentButton:hover {
   border-style: solid;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 109, 150);
 }
+
 .company-production__item2 {
   background-image: url("images/magnetic.jpg");
   position: relative;
   width: 368px;
   height: 158px;
   margin: 0 18px 31px 0;
-  }
+}
  
 .company-production__rectangle3 {
   background-color: rgba(0, 0, 0, 0.502);
@@ -433,15 +445,16 @@ body {
   margin: 0;
   padding: 1px 1px 0 0;
   z-index: 1;
-  }
+}
+
 .company-production__item3 {
   background-image: url("images/innovation.jpg");
   position: relative;
   width: 368px;
   height: 261px;
   margin: 0 18px 31px 0;
- 
-  }
+ }
+
 .company-production__rectangle-innovation {
   background-color: rgb(117, 76, 36);
   position: relative;
@@ -449,7 +462,8 @@ body {
   width: 140px;
   height: 37px;
   z-index: 0;
-  }
+}
+
 .company-production__text-innovation {
   color: rgb(255, 255, 255);
   font-size: 18px;
@@ -457,7 +471,7 @@ body {
   text-align: center;
   position: relative;
   display: flex;
-  }
+}
 
 .company-production__text-innovation-content{
 text-align: center;
@@ -469,17 +483,17 @@ padding-top: 7.7px;
   color: rgb(255, 255, 255);
   margin-top: 93px;
   height: 71px;;
-  }
+}
+
 .company-production__item4 {
   background-image: url("images/Details.jpg.jpg");
   position: relative;
   margin: 0 18px 0 0;
   width: 755px;
   height: 258px;
+}
 
-  }
-
-  .company-production__rectangle4 .company-production__rectangle-innovation {
+.company-production__rectangle4 .company-production__rectangle-innovation {
   background-color: rgb(180, 138, 10);
   position: relative;
   width: 246px;
@@ -492,13 +506,14 @@ padding-top: 7.7px;
   position: relative;  
   width: 755px;
   height: 258px;
-  }
+}
 
 .company-production__rectangle4 .company-production__text {
   color: rgb(255, 255, 255);
   margin-top: 121px;
   height: 43px;
 }
+
 .company-production__rectangle4 .ContentButton{
 left: 298px;;
 }
@@ -509,7 +524,8 @@ left: 298px;;
   width: 368px;
   height: 151px;
   z-index: 51;
-  }
+}
+
 /*преимущества*/
 .advantages {
   display: flex;
@@ -524,7 +540,7 @@ left: 298px;;
   align-items: center;
   width: 100%;
   height: 182px;
-  }
+}
 
  .advantages__header {
    margin-top: 100px;
@@ -532,10 +548,10 @@ left: 298px;;
   text-align: center;
   width: 100%;
 }
+
 .advanteges__content{
   width: 1140px;
   padding-bottom: 100px;
-
 }
 
 .advanteges__item{
@@ -556,6 +572,7 @@ left: 298px;;
   display: inline-block;
   font-size: 16px; 
 }
+
 /*Заказчики*/
 .section-wrapper2 {
   background-color: rgb(249, 249, 249);
@@ -575,6 +592,7 @@ left: 298px;;
   height: 150px;
   padding-top: 62px;
 }
+
 /*второй слайдер*/
 .slider-partners{
   display: flex;
@@ -588,8 +606,6 @@ left: 298px;;
   width: 1030px;
   height: 124px;
   position: relative;
-  
-  
 }
 
 .slider-partners .swiper-slide{
@@ -597,6 +613,7 @@ left: 298px;;
   background-color: rgb(255, 255, 255);
   width: 143px;
 }
+
 /*навигация во втором слайдере*/
 .slider-partners__navigation{
   width: 1140px;
@@ -615,8 +632,8 @@ left: 298px;;
   background-repeat: no-repeat;
   z-index: 6;
 }
-.slider-partners-button-next {
-  
+
+.slider-partners-button-next {  
   cursor: pointer;
   position: absolute;  
   color: rgb(0 0 0 / 0%);
@@ -632,6 +649,7 @@ left: 298px;;
   background-image: url(images/ArrowLeftRed.png);  
   background-repeat: no-repeat;
 }
+
 .slider-partners-button-next:active {
   background-image: url(images/ArrowRightRed.png);
   background-repeat: no-repeat;  
@@ -650,6 +668,7 @@ left: 298px;;
 }  
 
 .PartnerIconURGTU {
+  display: inline-block;
   background-image: url("images/URGTUBW.jpg");
   cursor: pointer;
   width: 85px;
@@ -661,6 +680,7 @@ left: 298px;;
 }
 
 .PartnerIconKlever {
+  display: inline-block;
   background-image: url("images/kleverBW.jpg");
   cursor: pointer;
   width: 131px;
@@ -672,17 +692,19 @@ left: 298px;;
 }
 
 .PartnerIconE {
+  display: inline-block;
   background-image: url("images/EBW.jpg");
   cursor: pointer;
   width: 89px;
   height: 80px;
   margin-top: 22px;
 }
-  .PartnerIconE:hover {
+.PartnerIconE:hover {
   background-image: url("images/E.jpg");  
-  } 
+} 
 
 .PartnerIconKizlyar {
+  display: inline-block;
   background-image: url("images/KizlyarBW.jpg");
   cursor: pointer;
   width: 96px;
@@ -694,6 +716,7 @@ left: 298px;;
 }
 
 .PartnerIconNefazBW {
+  display: inline-block;
   background-image: url("images/Nefaz.jpg");
   width: 120px;
   height: 26px;
@@ -722,16 +745,18 @@ left: 298px;;
  margin: 0 auto;
  padding: 55px 0 0 35px;
 }
+
 .footer__content-conteiner{
   display: flex;
   flex-wrap: wrap;
   width: 795px;
   text-align: left;
-
 }
+
 .footer__logo-conteiner{
   flex-grow: 1;
 }
+
 .footer__content-block1{
   width: 330px;
   margin-left: -10px;
@@ -747,9 +772,9 @@ left: 298px;;
 }
 
 .footer__content-item {
-  margin-bottom: 10px;
-  
+  margin-bottom: 10px; 
 }
+
 .footer__content-item a {
   font-size: 14px;
   color: rgb(0, 0, 0);
@@ -764,6 +789,7 @@ left: 298px;;
   color: inherit;
   text-decoration: none;
 }
+
 .footer__content-item a:hover {
   color: inherit;
   text-decoration: underline;
@@ -800,7 +826,7 @@ left: 298px;;
 }
 
 a.facebook {
-background-position: 0px;
+  background-position: 0px;
 }
 a.VK { 
   background-position: -31px;
