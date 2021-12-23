@@ -32,7 +32,7 @@ body {
 
 .header-logo {
   flex-grow: 1;
-  margin-top: 20px;
+  margin-top: 17px;
   align-items: center;
 }
 
@@ -44,7 +44,7 @@ body {
   font-weight: bold;
   line-height: 1;
   transform: scaleY(0.7);
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
   text-decoration: none;
 }
 
@@ -66,6 +66,8 @@ body {
   font: 11px/1 "Roboto", sans-serif;
   color: rgb(0, 0, 0);
   text-transform: none;
+  margin-top: 1px;
+
 }
 /*меню*/
 .header-menu {
@@ -73,8 +75,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 360px;
   z-index: 4;
+  margin: 3px 38px 0 0;
 }
 
 .header-menu__item {
@@ -108,6 +110,8 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   line-height: 1.2;
+  margin-top: 2px;
+  margin-right: -4px;
 }
 
 .blue-button:hover {
@@ -125,6 +129,7 @@ body {
   font-size: 18px;
   color: rgba(0, 0, 0, 255);
   text-align: left;
+  margin: 3px 20px 0 0;
 }
 
 .header-contacts__phone {
@@ -161,11 +166,14 @@ body {
   height: 300px;
   box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 16%);
   position: absolute;
+  margin: -4px 0 0 4px;
+  padding-top: 6px;
   z-index: 10;
 }
 
 .header-menu__production-list-item {
-  padding: 32.6px 0px 0px 38px;
+  padding: 31px 0px 0px 34px;
+  letter-spacing: 0.05em;
   z-index: 10;
 }
 
@@ -200,12 +208,12 @@ body {
 .header-menu__Production-list::after {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background: rgba(255, 255, 255);
   transform: rotate(45deg); 
   top: -5px;
-  left: 32px;
+  left: 40px;
   box-shadow: -3px -3px 5px -2px rgb(0 0 0 / 16%);
 }
  
@@ -235,7 +243,7 @@ body {
   top: 50%;
   width: 22px;
   height: 40px;
-  margin: -20px 0% 0% 0%;
+  margin: -13px 0 0% 21px;
   background-image: url(images/ArrowLeftBlue.png);
   background-repeat: no-repeat;
   z-index: 6;
@@ -248,7 +256,7 @@ body {
    top: 50%;
    width: 22px;
    height: 40px;
-   margin: -20px 0% 0% 0%;
+   margin: -13px 30px 0% 0px;
    background-image: url(images/ArrowRightBlue.png);
    background-repeat: no-repeat;
    z-index: 6;
@@ -270,7 +278,7 @@ body {
   display: flex;
   justify-content: left;
   
-  padding: 0px 0px 35px 102px;
+  padding: 0px 0px 30px 128px;
   
 }
 
@@ -287,7 +295,7 @@ body {
 }
 
 .swiper__content-wrapper{
-  max-width: 1140px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
   height: 465px;
@@ -300,23 +308,24 @@ body {
   position: absolute;
   top: 50%;
   margin: -108px 0px 0px 0px;
-  left: 40px;
+  left: 60px;
   width: 591px;
   height: 219px;
   z-index: 5;
 }
 
 .swiper__text-header{
-  font-size: 28.5px;
+  font-size: 28.6px;
   font-family: "Roboto";
   color: rgb(0, 1, 37);
   text-transform: uppercase;
   line-height: 1.2;
   text-align: left;
   position: absolute;
-  left: 50px;
-  top: 31.5px;
+  left: 64px;
+  top: 33px;
   width: 497px;
+  letter-spacing: 0.002em;
   z-index: 109;
 }
 
@@ -327,8 +336,8 @@ body {
   line-height: 1.5;
   text-align: justify;
   position: absolute;
-  left: 52px;
-  top: 83.028px;
+  left: 65px;
+  top: 84px;
   width: 497px;
   height: 106px;
   z-index: 110;
@@ -340,7 +349,8 @@ body {
   flex-wrap: wrap;
   max-width: 1140px;
   height: 1000px;
-  margin: 0 auto;
+  margin:  0 auto;
+  padding: 0 1px;
 }
 
 .company-production__text-content1 {
@@ -348,7 +358,7 @@ body {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  padding: 100px 0 50px 0;
+  padding: 88px 0 50px 0;
 }
 
 .company-production__text-content2 {
@@ -357,6 +367,7 @@ body {
   text-align: left;
   text-indent: 20px;
   width: 100%;
+  margin-top: -5px;
 }
 
 .company-production__text-content3 {
@@ -364,12 +375,13 @@ body {
   line-height: 1.2;
   text-align: center;
   width: 100%;
-  padding: 100px 0 50px 0;
+  padding: 90px 0 50px 0;
 }
 
 .company-production__conteiner{
  display: flex;
  justify-content: space-between;  
+ 
 }
 
 .company-production__text {
@@ -378,7 +390,7 @@ body {
   display: flex;
   align-items: center;
   height: 43px;
-  margin: 10px 0 10px 0;
+  margin: 15px 0 0px 0;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -392,7 +404,7 @@ body {
   background-image: url("images/sam_pod.jpg");
   width: 368px;
   height: 168px;
-  margin: 0 18px 31px 0; 
+  margin: 1px 18px 30px 0; 
 }
 
 .company-production__rectangle1 {
@@ -415,7 +427,8 @@ body {
   border-color: rgb(0, 174, 239);
   border-radius: 4px;
   position: relative;
-  left: 105px;
+  left: 104px;
+  margin-top: 4px;
   width: 158px;
   height: 34px;
   font-size: 14px;
@@ -433,8 +446,8 @@ body {
   background-image: url("images/magnetic.jpg");
   position: relative;
   width: 368px;
-  height: 158px;
-  margin: 0 18px 31px 0;
+  height: 168px;
+  margin: 1px 18px 30px 0; 
 }
  
 .company-production__rectangle3 {
@@ -442,8 +455,8 @@ body {
   position: relative;
   width: 368px;
   height: 262px;
-  margin: 0;
-  padding: 1px 1px 0 0;
+  margin-left: -1px;
+  
   z-index: 1;
 }
 
@@ -452,7 +465,7 @@ body {
   position: relative;
   width: 368px;
   height: 261px;
-  margin: 0 18px 31px 0;
+  margin: 1px 18px 30px 0; 
  }
 
 .company-production__rectangle-innovation {
@@ -468,22 +481,31 @@ body {
   color: rgb(255, 255, 255);
   font-size: 18px;
   line-height: 1.2;
+  
   text-align: center;
   position: relative;
   display: flex;
 }
 
 .company-production__text-innovation-content{
-text-align: center;
-width: 100%;
-padding-top: 7.7px;
+  text-align: center;
+  width: 100%;
+  padding-top: 7.7px;
+  margin: 2px 0px 0 -2px;
 }
 
 .company-production__rectangle3 .company-production__text {
   color: rgb(255, 255, 255);
-  margin-top: 93px;
+  margin-top: 83px;
   height: 71px;;
 }
+.company-production__rectangle3 .ContentButton {
+  
+  left: 102px;
+  margin-top: 18px;
+}
+
+
 
 .company-production__item4 {
   background-image: url("images/Details.jpg.jpg");
@@ -498,7 +520,7 @@ padding-top: 7.7px;
   position: relative;
   width: 246px;
   margin: 0;
-  top: 26px;
+  top: 24px;
 }
 
 .company-production__rectangle4 {
@@ -506,32 +528,42 @@ padding-top: 7.7px;
   position: relative;  
   width: 755px;
   height: 258px;
+  margin: -1px 0 0 0;
 }
 
 .company-production__rectangle4 .company-production__text {
   color: rgb(255, 255, 255);
-  margin-top: 121px;
+  margin-top: 115px;
   height: 43px;
 }
 
 .company-production__rectangle4 .ContentButton{
-left: 298px;;
+left: 298px;
+margin-top: 8px;
 }
 
 .company-production__item5 {
   background-image: url("images/Steel.jpg");
   position: relative;
   width: 368px;
-  height: 151px;
-  z-index: 51;
+  height: 168px;
+  margin: 0 0 0 -2px; 
 }
+.company-production__item5 .company-production__rectangle1 {
+  margin-top: -4px;
+}
+
+.company-production__item5 .ContentButton {
+  margin: -1px 0px 0 -1px;
+}
+
 
 /*преимущества*/
 .advantages {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1140px;
-  height: 450px;
+  max-width: 1200px;
+  height: 438px;
   margin: 0 auto;
   margin-top: 8px;
 }
@@ -539,26 +571,26 @@ left: 298px;;
 .advantages__wrapper {
   align-items: center;
   width: 100%;
-  height: 182px;
+  height: 130px;
 }
 
  .advantages__header {
-   margin-top: 100px;
+  margin-top: 77px;
   font-size: 30px;
   text-align: center;
   width: 100%;
 }
 
 .advanteges__content{
-  width: 1140px;
-  padding-bottom: 100px;
+  width: 1200px;
+  padding-bottom: 120px;
 }
 
 .advanteges__item{
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  width: 24%;
+  width: 24.5%;
   align-items: center;  
 }
 
@@ -571,6 +603,7 @@ left: 298px;;
 .advanteges__text{
   display: inline-block;
   font-size: 16px; 
+  height: 70px;
 }
 
 /*Заказчики*/
@@ -590,7 +623,7 @@ left: 298px;;
 .partners__header {
   width: 100%;
   height: 150px;
-  padding-top: 62px;
+  padding-top: 52px;
 }
 
 /*второй слайдер*/
@@ -639,7 +672,7 @@ left: 298px;;
   color: rgb(0 0 0 / 0%);
   width: 22px;
   height: 40px;
-  margin: 40px 0 0 1119.5px;
+  margin: 41px 0 0 1118px;
   background-image: url(images/ArrowRightBlue.png);
   background-repeat: no-repeat;
   z-index: 6;
@@ -685,7 +718,7 @@ left: 298px;;
   cursor: pointer;
   width: 131px;
   height: 45px;
-  margin-top: 39.5px;
+  margin-top: 30px;
 }
 .PartnerIconKlever:hover {
   background-image: url("images/klever.jpg");
@@ -736,6 +769,8 @@ left: 298px;;
   line-height: 1.2;
   width: 100%;
   height: 180px;
+  margin-top: -2px;
+  
 }
 
 .footer__conteiner {
@@ -743,7 +778,7 @@ left: 298px;;
  flex-wrap: nowrap;
  width: 1140px;
  margin: 0 auto;
- padding: 55px 0 0 35px;
+ padding: 53px 0 0 33px;
 }
 
 .footer__content-conteiner{
@@ -756,19 +791,34 @@ left: 298px;;
 .footer__logo-conteiner{
   flex-grow: 1;
 }
+.footer__logo-conteiner .header-logo__main-title{
+  margin-top: -2px;
+}
+.footer__logo-conteiner .header-logo__subtitle{
+  margin-top: 5px;
+}
 
 .footer__content-block1{
-  width: 330px;
-  margin-left: -10px;
-  padding-left: 10px;
+  width: 338px;
+  margin: 0 0 0 -10px;
+  padding-left: 12px;
+}
+.footer__content-block1 .footer__content-item{
+  margin-bottom: 18px;
 }
 
 .footer__content-block2{
-  width: 270px;
+  width: 263px;
+}
+.footer__content-block2 .footer__content-item{
+  margin: -4px 0 17px 0;
 }
 
 .footer__content-block3{
   width: 204px;
+}
+.footer__content-block3 .footer__content-item{
+  margin: -4px 0 17px 0;
 }
 
 .footer__content-item {
@@ -798,20 +848,21 @@ left: 298px;;
 .footer__bottom-conteiner {
   display: flex;
   width: 1140px;
-  margin: 10px auto;
+  margin: 0 auto;
   height: 24px;
 }
 
 .footer__bottom-conteiner__confediciality{
   font-size: 11px;
   text-transform: none;
-  padding: 13px 0 0 5px;
+  padding: 8px 0 0 6px;
   width: 204px;
 }
 
 .footer__bottom-conteiner__socials {
   flex-grow: 1;
-  padding-left: 35px;
+  padding-left: 34px;
+  margin-top: -5px;
   height: 24px;
 }
 
@@ -821,7 +872,7 @@ left: 298px;;
   background-repeat: no-repeat;
   height: 24px;
   width: 24px;
-  margin-left: 7px;
+  margin-left: 2px;
   display: inline-block;
 }
 
